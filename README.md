@@ -31,7 +31,7 @@ Still to configure: production domain and canonical/social image; consent and pr
 
 ## Deployment
 
-The static Vite build outputs to `dist/` and can be hosted on Cloudflare Pages or another static host. Connect the repository, use `npm install` (commit the generated `package-lock.json` for reproducible CI installs), `npm run build`, and `dist` as the output directory. Add only the public forms endpoint URL as a build-time environment variable if configured. Replace the example domain in `public/sitemap.xml` and add a real social-sharing image before launch.
+The repository deploys to GitHub Pages at `https://trusegone.github.io/BLACK-AMBRELLA/` using `.github/workflows/deploy.yml`. Each push to `main` builds the site and publishes `dist/`. The Vite base path is set for GitHub Actions while local development keeps the root path. If Pages is not enabled yet, open repository **Settings → Pages** and choose **GitHub Actions** as the build and deployment source. Add only the public forms endpoint URL as a build-time environment variable if configured. Add a real social-sharing image before launch.
 
 ## Data and administration
 
